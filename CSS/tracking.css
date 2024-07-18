@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* / -------------------Order Tracking------------------- / */
+.stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px dashed #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+}
+
+.stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px dashed #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+}
+
+.stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #ccc;
+}
+
+.stepper-item:first-child::before {
+    content: none;
+}
+
+.stepper-item:last-child::after {
+    content: none;
+}
+
+.step-name {
+    color: gray;
+    font-size: 15px;
+}
+
+
+.tracking_card p{
+    font-size: 19px !important;
+}
+.tracking_card  img {
+    display: block;
+    width: 100%;
+    height: 200px !important;
+}
+
+
+/* .item img{ 
+  width:50%;
+  height:auto;
+  object-fit: cover;
+}
+.owl-carousel .owl-item img {
+  width: 50% !important;
+} */
+.card-body {
+    font-size: 10px;
+    padding: 0 !important;
+}
+
+.tracking_slider img{
+    height: 170px !important;
+    object-fit: contain;
+}
+.tracking_card .rating{
+    font-size: 20px !important;
+}
+@media screen and (max-width:425px) {
+    .tracking_card p,.tracking_card strike,.tracking_card button{
+        font-size: 14px !important;
+    }
+    .tracking_card .rating{
+        margin-top: -10px !important;
+        font-size: 15px !important;
+    }
+    .tracking_card strike{
+        padding-top: 10px !important;
+    }
+   
+}
+@media screen and (max-width:768px) {
+    .track .owl-carousel .owl-item img{
+        height: 200px !important;
+    }
+    .right_card{
+        margin-top: 20px !important;
+    }
+} 
+@media screen and (min-width:1024px) {
+    .right_card{
+        padding-left: 20px !important;
+    }
+}

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #f2f9ff !important;
+}
+.aboutus .spacer{
+    margin: 70px 0px;
+}
+.aboutus .our_story{
+    width: 70% !important;
+    justify-content: center !important;
+}
+.aboutus img{
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.aboutus .airpods_img{
+    margin: auto !important;
+}
+.aboutus .our_company .left_side{
+    width: 80% !important;
+}
+.aboutus .last_section img{ 
+    width: 30% !important;
+    margin-bottom: 4px !important;
+}
+.aboutus .last_section p{
+    margin-bottom: 7px !important;
+}
+@media screen and (max-width:992px){
+    .aboutus .airpods .left_side h1{
+        text-align: center !important;
+        margin: 30px 0px !important;
+    }
+    .aboutus .our_company .left_side{
+        margin-top: 50px !important;
+        width: 100% !important;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .aboutus .mobile_view{
+        flex-wrap: wrap !important;
+    }
+    .aboutus .mobile_view div{
+        margin-top: 50px !important;
+    }
+}

@@ -1,0 +1,99 @@
+.cart_body body {
+  font-family: 'Poppins' !important;
+  background-color: #F2F9FF !important;
+}
+.cart_body ul,li{
+  list-style: none !important;
+  padding-left: 0px !important;
+}
+
+
+.cart_body .row {
+  padding: 0 !important;
+  margin: 0 !important;
+  --bs-gutter-x: 0rem !important; 
+}
+
+
+.cart_body .red_icon{
+  color: red !important;
+  cursor: pointer;
+}
+
+.cart_body .table_d{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.cart_body .free_txt{
+  color: #152A56 !important;
+  text-transform: uppercase !important;
+}
+.cart_body .cart_btn{
+ background-color: transparent !important;
+ color: black !important;
+ border: 1px solid black !important;
+}
+@media screen and (max-width:1440px) {
+ 
+  .cart_body .cart_btn{
+    font-size: 14px !important;
+  }
+  
+}
+@media screen and (max-width:992px) {
+  .cart_body .bill_card {
+    margin-top: 30px !important;
+  }
+  
+  
+}
+
+  
+
+@media screen and (max-width:425px) {
+  .cart_body .cart_data{
+    font-size: smaller !important;
+  }
+
+
+  .cart_body .cart_btn{
+    font-size: smaller !important;
+  }
+
+ 
+}
+@media screen and (max-width:320px)
+{
+  
+  .cart_body .col-mobile{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .cart_body .col.price_col {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+
+/* .bill_card  */
+.cart_body .bill_card{
+  background-color: white !important;
+  border-radius: 3px !important;
+}
+.cart_body .bill_card li{
+  margin-top: 15px !important;
+}
+
+
+.my-cart{
+  display: flex !important;
+  justify-content: space-between !important;
+  text-transform: capitalize;
+}
+.my-cart p{
+  font-size: 26px;
+  font-weight: 700;
+}
